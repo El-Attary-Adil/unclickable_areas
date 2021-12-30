@@ -1,2 +1,22 @@
-!function o(i,n,u){function p(e,t){if(!n[e]){if(!i[e]){var r="function"==typeof require&&require;if(!t&&r)return r(e,!0);if(a)return a(e,!0);throw(r=new Error("Cannot find module '"+e+"'")).code="MODULE_NOT_FOUND",r}r=n[e]={exports:{}},i[e][0].call(r.exports,function(t){return p(i[e][1][t]||t)},r,r.exports,o,i,n,u)}return n[e].exports}for(var a="function"==typeof require&&require,t=0;t<u.length;t++)p(u[t]);return p}({1:[function(t,e,r){"use strict";var o=document.querySelectorAll("iframe");o.forEach(function(t){var e,r,o=t.parentNode;"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 177.7778%; padding-top: 120px;"==o.getAttribute("style")&&(r=document.createElement("div"),e=document.createElement("div"),t=document.createElement("div"),r.setAttribute("style","position: absolute; top: 260px; right: 0; width: 80px; height: 320px; background-color: transparent;"),e.setAttribute("style","position: absolute; top: 529px; right: 0; width: 100%; height: 50px; background-color: transparent;"),t.setAttribute("style","position: absolute; top: 570px; right: 0; width: 100%; height: 203px; background-color: transparent;"),o.insertBefore(r,r=void 0),o.insertBefore(e,r),o.insertBefore(t,r))})},{}]},{},[1]);
-//# sourceMappingURL=main.js.map
+document.addEventListener('DOMContentLoaded', function () {
+   let arr = document.querySelectorAll("iframe");
+   let check =
+      "left: 0; width: 100%; height: 0; position: relative; padding-bottom: 177.7778%; padding-top: 120px;";
+   arr.forEach((el) => {
+      var c = el.parentNode;
+      t = c.getAttribute("style");
+      if (check == t) {
+         console.log("checked");
+         var Div01 = document.createElement("div");
+         var Div02 = document.createElement("div");
+         var Div03 = document.createElement("div");
+         Div01.setAttribute("style", "position: absolute; top: 260px; right: 0; width: 80px; height: 320px; background-color: transparent;");
+         Div02.setAttribute("style", "position: absolute; top: 529px; right: 0; width: 100%; height: 50px; background-color: transparent;");
+         Div03.setAttribute("style", "position: absolute; top: 570px; right: 0; width: 100%; height: 203px; background-color: transparent;");
+         let p = undefined;
+         c.insertBefore(Div01, p);
+         c.insertBefore(Div02, p);
+         c.insertBefore(Div03, p);
+      }
+   });
+}, false);
